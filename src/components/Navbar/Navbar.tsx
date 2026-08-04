@@ -15,11 +15,7 @@ function Navbar() {
           </li>
 
           <li>
-            <a href="#skills">Skills</a>
-          </li>
-
-          <li>
-            <a href="#projects">Portfolio</a>
+            <a href="#services">Services</a>
           </li>
 
           <li>
@@ -27,7 +23,11 @@ function Navbar() {
           </li>
 
           <li>
-            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+          </li>
+
+          <li>
+            <a href="#skills">Tech Stack</a>
           </li>
 
           <li>
@@ -36,7 +36,7 @@ function Navbar() {
         </ul>
 
         <button className="resume-btn">
-          Resume
+          <a href="#contact">Hire Me</a>
         </button>
       </div>
     </nav>
