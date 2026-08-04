@@ -1,0 +1,133 @@
+/* ========================================
+   CONTACT
+======================================== */
+
+.contact {
+  padding: var(--space-4xl) 0;
+}
+
+/* ========================================
+   CONTACT CONTENT
+======================================== */
+
+.contact-content {
+  max-width: 760px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.contact-description {
+  margin-bottom: var(--space-3xl);
+
+  font-size: var(--text-lg);
+  line-height: 1.8;
+
+  color: var(--color-text-secondary);
+}
+
+/* ========================================
+   CONTACT INFO
+======================================== */
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+
+  margin-bottom: var(--space-3xl);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+
+  color: var(--color-text-secondary);
+
+  font-size: var(--text-base);
+}
+
+.contact-item svg {
+  color: var(--color-primary);
+
+  flex-shrink: 0;
+}
+
+.contact-item a {
+  color: var(--color-text-secondary);
+
+  text-decoration: none;
+
+  transition: var(--transition-default);
+}
+
+.contact-item a:hover {
+  color: var(--color-primary);
+}
+
+/* ========================================
+   CONTACT BUTTONS
+======================================== */
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-lg);
+
+  flex-wrap: wrap;
+}
+
+.contact-buttons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+
+  padding: 14px 28px;
+
+  border-radius: var(--radius-md);
+
+  font-weight: var(--font-semibold);
+
+  text-decoration: none;
+
+  transition: var(--transition-default);
+}
+
+/* ========================================
+   PRIMARY BUTTON
+======================================== */
+
+.btn-primary {
+  background: var(--color-primary);
+
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 12px 28px rgba(124, 77, 255, 0.35);
+}
+
+/* ========================================
+   SECONDARY BUTTON
+======================================== */
+
+.btn-secondary {
+  background: transparent;
+
+  border: 2px solid var(--color-border);
+
+  color: var(--color-text);
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-primary);
+
+  color: var(--color-primary);
+
+  transform: translateY(-3px);
+}
