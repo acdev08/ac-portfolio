@@ -1,0 +1,161 @@
+/* ========================================
+   PROJECTS
+======================================== */
+
+.projects {
+  padding: var(--space-4xl) 0;
+}
+
+/* ========================================
+   PROJECTS HEADER
+======================================== */
+
+.projects-header {
+  max-width: 720px;
+  margin: 0 auto var(--space-3xl);
+
+  text-align: center;
+}
+
+.projects-description {
+  font-size: var(--text-lg);
+  line-height: 1.8;
+
+  color: var(--color-text-secondary);
+}
+
+/* ========================================
+   PROJECT GRID
+======================================== */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-xl);
+}
+
+/* ========================================
+   PROJECT CARD
+======================================== */
+
+.project-card {
+  overflow: hidden;
+
+  background: var(--color-surface);
+
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+
+  transition: var(--transition-default);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(124, 77, 255, 0.35);
+
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
+}
+
+/* ========================================
+   PROJECT IMAGE
+======================================== */
+
+.project-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 220px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(124, 77, 255, 0.15),
+    rgba(124, 77, 255, 0.05)
+  );
+
+  border-bottom: 2px solid var(--color-border);
+
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+
+  color: var(--color-text-secondary);
+}
+
+/* ========================================
+   PROJECT CONTENT
+======================================== */
+
+.project-content {
+  padding: var(--space-xl);
+}
+
+.project-stack {
+  display: inline-block;
+
+  margin-bottom: var(--space-md);
+
+  color: var(--color-primary);
+
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+
+  letter-spacing: 0.5px;
+}
+
+.project-content h3 {
+  margin-bottom: var(--space-md);
+
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  font-weight: var(--font-bold);
+
+  color: var(--color-text);
+}
+
+.project-content p {
+  margin-bottom: var(--space-xl);
+
+  line-height: 1.8;
+
+  color: var(--color-text-secondary);
+}
+
+/* ========================================
+   PROJECT LINKS
+======================================== */
+
+.project-links {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 22px;
+
+  background: rgba(124, 77, 255, 0.08);
+
+  border: 1px solid rgba(124, 77, 255, 0.25);
+  border-radius: var(--radius-md);
+
+  color: var(--color-text);
+
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+
+  text-decoration: none;
+
+  transition: var(--transition-default);
+}
+
+.project-links a:hover {
+  background: var(--color-primary);
+
+  border-color: var(--color-primary);
+
+  color: white;
+}

@@ -4,6 +4,8 @@ import About from "./sections/About/About";
 import Skills from "./sections/Skills/Skills";
 import Experience from "./sections/Experience/Experience";
 import Services from "./sections/Services/Services";
+import Projects from "./sections/Projects/Projects";
+import Contact from "./sections/Contact/Contact";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Skills />
       <Experience />
       <Services />
+      <Projects />
+      <Contact />
     </>
   );
 }
