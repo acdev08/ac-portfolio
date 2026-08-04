@@ -1,0 +1,104 @@
+/* ========================================
+   SERVICES
+======================================== */
+
+.services {
+  padding: var(--space-4xl) 0;
+}
+
+/* ========================================
+   SERVICES HEADER
+======================================== */
+
+.services-header {
+  max-width: 720px;
+  margin: 0 auto var(--space-4xl);
+
+  text-align: center;
+}
+
+.services-description {
+  font-size: var(--text-lg);
+  line-height: 1.8;
+
+  color: var(--color-text-secondary);
+}
+
+/* ========================================
+   SERVICES GRID
+======================================== */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+}
+
+/* ========================================
+   SERVICE CARD
+======================================== */
+
+.service-card {
+  padding: var(--space-xl);
+
+  background: var(--color-surface);
+
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+
+  transition: var(--transition-default);
+
+  cursor: default;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+
+  border-color: rgba(124, 77, 255, 0.35);
+
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.18);
+}
+
+/* ========================================
+   SERVICE ICON
+======================================== */
+
+.service-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 72px;
+  height: 72px;
+
+  margin-bottom: var(--space-lg);
+
+  background: rgba(124, 77, 255, 0.12);
+
+  border: 1px solid rgba(124, 77, 255, 0.25);
+  border-radius: var(--radius-md);
+}
+
+.service-icon svg {
+  color: var(--color-primary);
+}
+
+/* ========================================
+   TYPOGRAPHY
+======================================== */
+
+.service-card h3 {
+  margin-bottom: var(--space-md);
+
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-weight: var(--font-bold);
+
+  color: var(--color-text);
+}
+
+.service-card p {
+  line-height: 1.8;
+
+  color: var(--color-text-secondary);
+}
