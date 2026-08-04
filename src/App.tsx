@@ -6,6 +6,7 @@ import Experience from "./sections/Experience/Experience";
 import Services from "./sections/Services/Services";
 import Projects from "./sections/Projects/Projects";
 import Contact from "./sections/Contact/Contact";
+import Footer from "./sections/Footer/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Experience />
       <Services />
       <Contact />
+      <Footer />
     </>
   );
 }
