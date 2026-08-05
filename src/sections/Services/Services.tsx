@@ -3,7 +3,7 @@ import "./Services.css";
 import {
   Globe,
   Wrench,
-  Rocket,
+  Palette,
 } from "lucide-react";
 
 import { FaWordpress } from "react-icons/fa";
@@ -19,13 +19,11 @@ function Services() {
           </span>
 
           <h2 className="section-title">
-            Digital Solutions for Your Business
+            What I Deliver
           </h2>
 
           <p className="services-description">
-            I help businesses and entrepreneurs build modern websites,
-            improve their online presence, and create digital solutions
-            that are scalable, secure, and built for long-term success.
+            Development builds the foundation. Creativity shapes the experience. Optimization keeps it growing.
           </p>
         </div>
 
@@ -39,9 +37,9 @@ function Services() {
             <h3>Website Development</h3>
 
             <p>
-              Build modern, responsive, and high-performance websites
-              tailored to business goals, from landing pages to complete
-              company websites.
+              Modern business websites, web applications,
+              and e-commerce solutions built with responsive
+              design, clean code, and modern technologies.
             </p>
           </div>
 
@@ -50,12 +48,12 @@ function Services() {
               <FaWordpress size={34} />
             </div>
 
-            <h3>WordPress Solutions</h3>
+            <h3>WordPress Development</h3>
 
             <p>
-              Develop custom WordPress websites using Elementor,
-              Gutenberg, WooCommerce, and provide scalable content
-              management solutions.
+              Custom WordPress websites, WooCommerce solutions,
+              CMS customization, plugin integration,
+              and scalable websites tailored to your business needs.
             </p>
           </div>
 
@@ -64,26 +62,27 @@ function Services() {
               <Wrench size={34} />
             </div>
 
-            <h3>Website Care & Support</h3>
+            <h3>Website Care & Optimization</h3>
 
             <p>
-              Keep websites secure, updated, and running smoothly through
-              maintenance, hosting & domain management, backups,
-              migrations, and technical support.
+              Website maintenance, technical SEO,
+              performance optimization, security updates,
+              hosting, domain management, backups,
+              and ongoing support.
             </p>
           </div>
 
           <div className="service-card">
             <div className="service-icon">
-              <Rocket size={34} />
+              <Palette size={34} />
             </div>
 
-            <h3>Website Performance & SEO</h3>
+            <h3>Creative Design</h3>
 
             <p>
-              Improve website speed, Core Web Vitals, technical SEO,
-              accessibility, and overall user experience to maximize
-              online performance.
+              Creative website design, branding assets,
+              digital graphics, and marketing materials
+              that strengthen your brand and enhance user experiences.
             </p>
           </div>
 
