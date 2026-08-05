@@ -36,7 +36,7 @@ function Navbar() {
         </ul>
 
         <button className="resume-btn">
-          <a href="#contact">Hire Me</a>
+          <a href="#contact">Let's Talk</a>
         </button>
       </div>
     </nav>

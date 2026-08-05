@@ -14,10 +14,10 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <Skills />
-      <Projects />
-      <Experience />
       <Services />
+      <Experience />
+      <Projects />
+      <Skills />
       <Contact />
       <Footer />
     </>

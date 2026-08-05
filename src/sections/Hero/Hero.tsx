@@ -2,43 +2,75 @@ import "./Hero.css";
 
 function Hero() {
   return (
-    <section className="hero">
-      <div className="container">
+    <section className="hero" id="home">
+      <div className="container hero-container">
+
+        {/* LEFT */}
         <div className="hero-content">
-<div className="hero-content">
-  <span className="hero-greeting">
-    Hi, I'm
-  </span>
 
-  <h1 className="hero-title">
-    Andro Cruz
-  </h1>
+          <div className="hero-badge">
+          <span className="badge-dot"></span>
+          Available For Projects
+        </div>< br/>
 
-  <h2 className="hero-role">
-    Full Stack Web Developer
-  </h2>
+          <span className="hero-greeting">
+            Hi, I'm
+          </span>
 
-  <p className="hero-description">
-    I build modern, responsive, and user-friendly web experiences with a focus on clean design and high-quality development.
-  </p>
+          <h1 className="hero-title">
+            Andro Cruz
+          </h1>
 
-  <div className="hero-buttons">
-    <a href="#portfolio" className="primary-btn">
-  View Projects
-    </a>
+          <h2 className="hero-role">
+            Web Developer
+          </h2>
 
-  <a href="#contact" className="secondary-btn">
-  Contact Me
-    </a>
-  </div>
-</div>
-      </div>
+          <p className="hero-description">
+            I build modern websites and web applications that are fast,
+            scalable, responsive, and designed to deliver exceptional
+            user experiences.
+          </p>
 
-        <div className="hero-image">
-    <img
-    src="/images/hero-image.png"
-    alt="Andro Cruz"/>
-</div>
+          <div className="hero-buttons">
+
+            <a
+              href="#projects"
+              className="primary-btn"
+            >
+              View Projects
+            </a>
+
+            <a
+              href="#contact"
+              className="secondary-btn"
+            >
+              Contact Me
+            </a>
+
+          </div>
+
+        </div>
+
+        {/* RIGHT */}
+
+        <div className="hero-image-wrapper">
+
+          {/* Purple Glow */}
+          <div className="hero-glow"></div>
+
+          {/* Frame */}
+          <div className="hero-frame">
+
+            <img
+              src="/images/hero-image-ac.png"
+              alt="Andro Cruz"
+              className="hero-image"
+            />
+
+          </div>
+
+        </div>
+
       </div>
     </section>
   );
