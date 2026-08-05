@@ -14,11 +14,11 @@ function Hero() {
         </div>< br/>
 
           <span className="hero-greeting">
-            Hi, I'm
+            Hello, World
           </span>
 
           <h1 className="hero-title">
-            Andro Cruz
+            I'm Andro Cruz
           </h1>
 
           <h2 className="hero-role">
@@ -26,9 +26,7 @@ function Hero() {
           </h2>
 
           <p className="hero-description">
-            I build modern websites and web applications that are fast,
-            scalable, responsive, and designed to deliver exceptional
-            user experiences.
+            I build modern websites and web applications using WordPress and modern technologies, delivering complete digital solutions for businesses.
           </p>
 
           <div className="hero-buttons">
