@@ -11,12 +11,11 @@ function Experience() {
           </span>
 
           <h2 className="section-title">
-            Professional Experience
+            Beyond The Code
           </h2>
 
           <p className="experience-description">
-            My journey in web development, building websites, digital solutions,
-            and continuously improving my skills through real-world projects.
+            Building experience through real projects, continuous learning, and practical problem-solving.
           </p>
         </div>
 
