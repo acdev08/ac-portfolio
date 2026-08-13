@@ -5,23 +5,19 @@ function Skills() {
     <section className="skills" id="skills">
       <div className="container">
         <div className="skills-header">
-          <span className="section-tag">
-            My Skills
-          </span>
+          <span className="section-tag">Tech Stack</span>
 
-          <h2 className="section-title">
-            Technologies & Tools I Use
-          </h2>
+          <h2 className="section-title">What I Work With</h2>
 
           <p className="skills-description">
-            Here are the technologies, frameworks, and tools I use to build
-            modern, scalable, and high-performance web applications.
+            The right tools build the foundation. The right technologies bring
+            ideas to life.
           </p>
         </div>
 
         <div className="skills-grid">
           <div className="skill-card">
-            <h3>Frontend</h3>
+            <h3>Frontend Development</h3>
 
             <div className="skill-tags">
               <span>HTML</span>
@@ -39,31 +35,45 @@ function Skills() {
             <div className="skill-tags">
               <span>Node.js</span>
               <span>Express</span>
+              <span>NestJS</span>
+              <span>PHP</span>
               <span>PostgreSQL</span>
+              <span>MySQL</span>
               <span>Supabase</span>
+              <span>REST APIs</span>
             </div>
           </div>
 
           <div className="skill-card">
-            <h3>WordPress Ecosystem</h3>
+            <h3>WordPress & CMS</h3>
 
             <div className="skill-tags">
               <span>WordPress</span>
-              <span>WooCommerce</span>
+              <span>Shopify</span>
+              <span>Squarespace</span>
               <span>Elementor</span>
               <span>Gutenberg</span>
+              <span>Spectra</span>
+              <span>Divi</span>
+              <span>Woocommerce</span>
             </div>
           </div>
 
           <div className="skill-card">
-            <h3>Tools</h3>
+            <h3>Tools & Deployment</h3>
 
             <div className="skill-tags">
               <span>Git</span>
               <span>GitHub</span>
+              <span>Vercel</span>
               <span>VS Code</span>
               <span>Figma</span>
+              <span>Photoshop</span>
+              <span>Illustrator</span>
+              <span>Canva</span>
               <span>Notion</span>
+              <span>ChatGPT</span>
+              <span>Codex</span>
             </div>
           </div>
         </div>
