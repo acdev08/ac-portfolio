@@ -1,69 +1,52 @@
 import "./Footer.css";
 
-import {
-  FaGithub,
-  FaLinkedin,
-} from "react-icons/fa";
-
-import {
-  Mail,
-} from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { Mail } from "lucide-react";
 
 function Footer() {
   return (
     <footer className="footer">
-
       <div className="container">
+        <div className="footer-main">
+          <nav className="footer-nav">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Tech Stack</a>
+            <a href="#contact">Contact</a>
+          </nav>
 
-        <div className="footer-content">
-
-          <h3>Andro Cruz</h3>
-
-          <span>
-            Full Stack Web Developer
-          </span>
-
-          <p>
-            Building modern websites and web applications
-            with clean code, scalable solutions, and
-            exceptional user experiences.
-          </p>
-
-          <div className="footer-social">
-
+          <nav className="footer-social">
             <a
               href="https://github.com/acdev08"
               target="_blank"
               rel="noreferrer"
+              aria-label="GitHub"
             >
               <FaGithub />
             </a>
 
             <a
-              href="#"
+              href="https://www.linkedin.com/in/androcruz08/"
               target="_blank"
               rel="noreferrer"
+              aria-label="LinkedIn"
             >
               <FaLinkedin />
             </a>
 
-            <a href="mailto:your@email.com">
-              <Mail size={18} />
+            <a href="mailto:revelz08@gmail.com" aria-label="Email">
+              <Mail size={17} />
             </a>
-
-          </div>
-
-          <div className="footer-bottom">
-
-            © 2026 Andro Cruz.
-            All Rights Reserved.
-
-          </div>
-
+          </nav>
         </div>
 
+        <div className="footer-bottom">
+          <span>All Rights Reserved.</span>
+          <span>© 2026 Andro Cruz</span>
+        </div>
       </div>
-
     </footer>
   );
 }
