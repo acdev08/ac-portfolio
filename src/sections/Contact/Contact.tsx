@@ -1,93 +1,122 @@
 import "./Contact.css";
 
-import {
-  Mail,
-  MapPin,
-  Download,
-} from "lucide-react";
+import { Mail, MapPin, Download } from "lucide-react";
 
-import {
-  FaGithub,
-  FaLinkedin,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Contact() {
   return (
     <section className="contact" id="contact">
       <div className="container">
-        <div className="contact-content">
+        {/* ========================================
+            CONTACT HEADER
+        ======================================== */}
 
-          <span className="section-tag">
-            Contact
-          </span>
+        <div className="contact-header">
+          <span className="section-tag">Contact</span>
 
-          <h2 className="section-title">
-            Let's Build Something Great Together
-          </h2>
+          <h2 className="section-title">Let's Work Together</h2>
 
           <p className="contact-description">
-            I'm currently open to full-time opportunities, freelance
-            projects, and exciting collaborations. If you're looking for
-            a passionate developer to help build your next digital
-            product, I'd love to hear from you.
+            Have a project in mind, an opportunity to discuss, or simply want to
+            connect? I'd love to hear from you.
           </p>
+        </div>
 
-          <div className="contact-info">
+        {/* ========================================
+            CONTACT GRID
+        ======================================== */}
 
-            <div className="contact-item">
-              <Mail size={20} />
-              <span>your@email.com</span>
-            </div>
+        <div className="contact-grid">
+          {/* ========================================
+              CONTACT CTA
+          ======================================== */}
 
-            <div className="contact-item">
-              <MapPin size={20} />
-              <span>Metro Manila, Philippines</span>
-            </div>
+          <div className="contact-card contact-cta">
+            <span className="contact-card-label">Get In Touch</span>
 
-            <div className="contact-item">
-              <FaGithub size={20} />
-              <a
-                href="https://github.com/acdev08"
-                target="_blank"
-                rel="noreferrer"
-              >
-                github.com/acdev08
+            <h3>Have a Project in Mind?</h3>
+
+            <p>
+              I'm open to full-time opportunities, freelance projects, and
+              meaningful collaborations. Let's create something useful,
+              thoughtful, and impactful together.
+            </p>
+
+            <div className="contact-buttons">
+              <a href="mailto:revelz08@gmail.com" className="btn-primary">
+                <Mail size={18} />
+                Send Email
+              </a>
+
+              <a href="#" className="btn-secondary">
+                <Download size={18} />
+                Download Resume
               </a>
             </div>
+          </div>
 
-            <div className="contact-item">
-              <FaLinkedin size={20} />
-              <a
-                href="#"
-                target="_blank"
-                rel="noreferrer"
-              >
-                LinkedIn Profile
-              </a>
+          {/* ========================================
+              CONTACT INFORMATION
+          ======================================== */}
+
+          <div className="contact-card">
+            <span className="contact-card-label">Contact Information</span>
+
+            <div className="contact-info">
+              <div className="contact-item">
+                <Mail size={20} />
+
+                <div>
+                  <span className="contact-item-label">Email</span>
+
+                  <a href="mailto:revelz08@gmail.com">revelz08@gmail.com</a>
+                </div>
+              </div>
+
+              <div className="contact-item">
+                <MapPin size={20} />
+
+                <div>
+                  <span className="contact-item-label">Location</span>
+
+                  <span>Metro Manila, Philippines</span>
+                </div>
+              </div>
+
+              <div className="contact-item">
+                <FaGithub size={20} />
+
+                <div>
+                  <span className="contact-item-label">GitHub</span>
+
+                  <a
+                    href="https://github.com/acdev08"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    github.com/acdev08
+                  </a>
+                </div>
+              </div>
+
+              <div className="contact-item">
+                <FaLinkedin size={20} />
+
+                <div>
+                  <span className="contact-item-label">LinkedIn</span>
+
+                  <a
+                    href="https://www.linkedin.com/in/androcruz08/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    LinkedIn Profile
+                  </a>
+                </div>
+              </div>
             </div>
-
           </div>
-
-          <div className="contact-buttons">
-
-            <a
-              href="mailto:your@email.com"
-              className="btn-primary"
-            >
-              <Mail size={18} />
-              Send Email
-            </a>
-
-            <a
-              href="#"
-              className="btn-secondary"
-            >
-              <Download size={18} />
-              Download Resume
-            </a>
-
-          </div>
-
         </div>
       </div>
     </section>
