@@ -1,5 +1,5 @@
 import "./About.css";
-import aboutImage from "../../assets/images/about-image.png";
+import aboutImage from "../../assets/images/about-image.webp";
 import useInView from "../../hooks/useInView";
 
 import { FaGithub, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
@@ -19,11 +19,7 @@ function About() {
             <div className="about-shape" />
 
             <div className="about-frame">
-              <img
-                src={aboutImage}
-                alt="Andro Cruz"
-                className="about-photo"
-              />
+              <img src={aboutImage} alt="Andro Cruz" className="about-photo" />
             </div>
           </div>
 

@@ -1,75 +1,248 @@
-# React + TypeScript + Vite
+# AC Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website built to showcase my experience, services, technical skills, selected projects, and creative work.
 
-Currently, two official plugins are available:
+The project was designed and developed from the ground up using React, TypeScript, Vite, and a custom CSS design system.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+AC Portfolio is a one-page personal portfolio website focused on presenting my professional experience and digital work through a clean, responsive, and interactive interface.
 
-## Expanding the ESLint configuration
+The project emphasizes:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Responsive design
+- Reusable React components
+- Consistent UI design
+- Accessible navigation
+- Subtle interface animations
+- Optimized frontend structure
+- Clean and maintainable code
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+⚛️ **Frontend**
 
+- React
+- TypeScript
+- Vite
+
+🎨 **Styling**
+
+- CSS3
+- Custom CSS Design System
+- CSS Transitions & Animations
+
+🧩 **Libraries**
+
+- Lucide React
+- React Icons
+
+🔧 **Development Tools**
+
+- VS Code
+- Git
+- GitHub
+- npm
+
+🚀 **Deployment**
+
+- Vercel
+
+---
+
+## Features
+
+- Responsive one-page portfolio
+- Fixed glass-style navigation
+- Responsive mobile navigation menu
+- Hero section with availability indicator
+- About section with experience highlights
+- Services showcase
+- Professional experience timeline
+- Project portfolio showcase
+- Technology stack section
+- Contact section
+- Social media and external project links
+- Smooth anchor navigation
+- Subtle entrance and hover animations
+- Reduced-motion support
+
+---
+
+## Project Structure
+
+```text
+src/
+├── assets/
+│   ├── images/
+│   └── projects/
+│
+├── components/
+│   └── Navbar/
+│
+├── hooks/
+│   └── useInView.ts
+│
+├── sections/
+│   ├── About/
+│   ├── Contact/
+│   ├── Experience/
+│   ├── Footer/
+│   ├── Hero/
+│   ├── Projects/
+│   ├── Services/
+│   └── Skills/
+│
+├── App.tsx
+├── index.css
+└── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Getting Started
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Prerequisites
 
+- Node.js
+- npm
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/acdev08/ac-portfolio.git
 ```
+
+Navigate to the project:
+
+```bash
+cd ac-portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The development server will be available at:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## Production Build
+
+Create an optimized production build:
+
+```bash
+npm run build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+---
+
+## Deployment
+
+The project is deployed using **Vercel** and connected to the GitHub repository.
+
+Production deployment workflow:
+
+```text
+GitHub
+   ↓
+Vercel
+   ↓
+Production Build
+   ↓
+Live Website
+```
+
+---
+
+## Development Workflow
+
+The project follows a structured development workflow:
+
+```text
+Planning
+   ↓
+UI/UX Design
+   ↓
+Frontend Development
+   ↓
+Testing & QA
+   ↓
+Deployment
+```
+
+Development work is tracked through Git commits and project documentation.
+
+---
+
+## Testing & QA
+
+Before deployment, the portfolio is validated through:
+
+- Functional & Navigation Testing
+- Responsive & Cross-Browser Testing
+- Visual & Accessibility Testing
+- Performance Testing
+- Bug Tracking & Final QA Verification
+
+The final QA pass is used to verify the portfolio across supported screen sizes and modern browsers.
+
+---
+
+## Version History
+
+The project follows incremental versioning to track major development milestones.
+
+Example:
+
+```text
+v0.1.0 — Project Foundation
+v0.2.0 — Landing Page
+v0.3.0 — Responsive Design
+v0.4.0 — UI & UX Polish
+v0.5.0 — Performance & SEO
+v0.6.0 — Content & CMS
+v0.7.0 — Testing
+v1.0.0 — Production Release
+```
+
+---
+
+## Author
+
+**Andro Cruz**
+
+Web Developer & Creative Designer
+
+- GitHub: https://github.com/acdev08
+- LinkedIn: https://www.linkedin.com/in/androcruz08/
+
+---
+
+## License
+
+This project is intended for personal portfolio and demonstration purposes.
