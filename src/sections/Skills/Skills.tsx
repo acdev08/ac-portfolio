@@ -5,9 +5,9 @@ function Skills() {
     <section className="skills" id="skills">
       <div className="container">
         <div className="skills-header">
-          <span className="section-tag">Tech Stack</span>
+          <span className="skills-tag">Tech Stack</span>
 
-          <h2 className="section-title">What I Work With</h2>
+          <h2 className="skills-title">What I Work With</h2>
 
           <p className="skills-description">
             The right tools build the foundation. The right technologies bring
@@ -55,7 +55,7 @@ function Skills() {
               <span>Gutenberg</span>
               <span>Spectra</span>
               <span>Divi</span>
-              <span>Woocommerce</span>
+              <span>WooCommerce</span>
             </div>
           </div>
 

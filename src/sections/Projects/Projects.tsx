@@ -9,16 +9,12 @@ import guroly from "../../assets/projects/img-project6.png";
 
 function Projects() {
   return (
-    <section id="projects" className="projects section">
+    <section className="projects" id="projects">
       <div className="container">
-        {/* ========================================
-            PROJECT HEADER
-        ======================================== */}
-
         <div className="projects-header">
-          <span className="section-tag">Projects</span>
+          <span className="projects-tag">Projects</span>
 
-          <h2 className="section-title">What I've Built</h2>
+          <h2 className="projects-title">What I've Built</h2>
 
           <p className="projects-description">
             Turning ideas into digital experiences through thoughtful design,
@@ -26,15 +22,8 @@ function Projects() {
           </p>
         </div>
 
-        {/* ========================================
-            PROJECT GRID
-        ======================================== */}
-
         <div className="projects-grid">
-          {/* ========================================
-              AC PORTFOLIO
-          ======================================== */}
-
+          {/* AC PORTFOLIO */}
           <div className="project-card">
             <div className="project-image">
               <img src={portfolio} alt="Personal portfolio website preview" />
@@ -68,10 +57,7 @@ function Projects() {
             </div>
           </div>
 
-          {/* ========================================
-              BONGABON LGU
-          ======================================== */}
-
+          {/* BONGABON LGU */}
           <div className="project-card">
             <div className="project-image">
               <img src={bongabon} alt="Bongabon LGU website preview" />
@@ -80,7 +66,9 @@ function Projects() {
             <div className="project-content">
               <span className="project-category">WordPress Development</span>
 
-              <span className="project-stack">Elementor • PHP • MySQL • API</span>
+              <span className="project-stack">
+                Elementor • PHP • MySQL • API
+              </span>
 
               <h3>Bongabon LGU</h3>
 
@@ -101,10 +89,7 @@ function Projects() {
             </div>
           </div>
 
-          {/* ========================================
-              WELLSPRING
-          ======================================== */}
-
+          {/* WELLSPRING */}
           <div className="project-card">
             <div className="project-image">
               <img
@@ -116,9 +101,7 @@ function Projects() {
             <div className="project-content">
               <span className="project-category">WordPress Development</span>
 
-              <span className="project-stack">
-              Spectra • PHP • MySQL 
-              </span>
+              <span className="project-stack">Spectra • PHP • MySQL</span>
 
               <h3>Wellspring Tutorials</h3>
 
@@ -139,10 +122,7 @@ function Projects() {
             </div>
           </div>
 
-          {/* ========================================
-              DIETCARE AUSTRALIA
-          ======================================== */}
-
+          {/* DIETCARE */}
           <div className="project-card">
             <div className="project-image">
               <img src={dietcare} alt="DietCare Australia website preview" />
@@ -152,7 +132,7 @@ function Projects() {
               <span className="project-category">WordPress Development</span>
 
               <span className="project-stack">
-                Woocommerce • PHP • MySQL • API 
+                WooCommerce • PHP • MySQL • API
               </span>
 
               <h3>DietCare Mackay</h3>
@@ -174,10 +154,7 @@ function Projects() {
             </div>
           </div>
 
-          {/* ========================================
-              CREATIVE DESIGN
-          ======================================== */}
-
+          {/* CREATIVE DESIGN */}
           <div className="project-card">
             <div className="project-image">
               <img
@@ -212,10 +189,7 @@ function Projects() {
             </div>
           </div>
 
-          {/* ========================================
-              GUROLY
-          ======================================== */}
-
+          {/* GUROLY */}
           <div className="project-card">
             <div className="project-image">
               <img src={guroly} alt="Guroly website preview" />

@@ -1,5 +1,5 @@
 /* ========================================
-   SKILLS
+   TECH STACK
 ======================================== */
 
 .skills {
@@ -7,17 +7,40 @@
 }
 
 /* ========================================
-   SKILLS HEADER
+   HEADER
 ======================================== */
 
 .skills-header {
   max-width: 720px;
-  margin: 0 auto var(--space-3xl);
-
+  margin: 0 auto var(--space-4xl);
   text-align: center;
 }
 
+.skills-tag {
+  display: inline-block;
+
+  margin-bottom: 16px;
+
+  color: #7230ff;
+
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  font-weight: 600;
+}
+
+.skills-title {
+  margin: 0 0 28px;
+
+  color: #d6d6df;
+
+  font-family: var(--font-heading);
+  font-size: var(--text-4xl);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
 .skills-description {
+  font-family: var(--font-body);
   font-size: var(--text-lg);
   line-height: 1.8;
 
@@ -30,7 +53,9 @@
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
   gap: var(--space-lg);
 }
 
@@ -39,6 +64,8 @@
 ======================================== */
 
 .skill-card {
+  min-width: 0;
+
   padding: var(--space-xl);
 
   background: var(--color-surface);
@@ -51,20 +78,26 @@
 
 .skill-card:hover {
   transform: translateY(-6px);
+
   border-color: rgba(124, 77, 255, 0.35);
+
   box-shadow:
     0 0 0 1px rgba(114, 48, 255, 0.18),
     0 0 25px rgba(114, 48, 255, 0.18);
 }
 
+/* ========================================
+   CARD TITLE
+======================================== */
+
 .skill-card h3 {
   margin-bottom: var(--space-lg);
+
+  color: var(--color-text);
 
   font-family: var(--font-heading);
   font-size: var(--text-xl);
   font-weight: var(--font-bold);
-
-  color: var(--color-text);
 }
 
 /* ========================================
@@ -73,11 +106,17 @@
 
 .skill-tags {
   display: flex;
+
   flex-wrap: wrap;
+
   gap: var(--space-sm);
+
+  min-width: 0;
 }
 
 .skill-tags span {
+  max-width: 100%;
+
   padding: 10px 18px;
 
   background: rgba(124, 77, 255, 0.12);
@@ -85,14 +124,82 @@
   border: 1px solid rgba(124, 77, 255, 0.25);
   border-radius: 999px;
 
+  color: var(--color-text);
+
+  font-family: var(--font-body);
   font-size: var(--text-sm);
   font-weight: var(--font-medium);
 
-  color: var(--color-text);
+  white-space: nowrap;
 
   transition: var(--transition-default);
 }
 
 .skill-tags span:hover {
   background: rgba(124, 77, 255, 0.2);
+}
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 992px) {
+  .skills {
+    padding: var(--space-3xl) 0;
+  }
+
+  .skills-header {
+    margin-bottom: var(--space-3xl);
+  }
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-title {
+    font-size: clamp(40px, 10vw, 52px);
+  }
+
+  .skills-description {
+    font-size: var(--text-base);
+    line-height: 1.8;
+  }
+
+  .skill-card {
+    padding: var(--space-lg);
+  }
+}
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 480px) {
+  .skills {
+    padding: var(--space-2xl) 0;
+  }
+
+  .skills-tag {
+    font-size: 16px;
+  }
+
+  .skills-title {
+    font-size: 38px;
+  }
+
+  .skill-tags {
+    gap: 8px;
+  }
+
+  .skill-tags span {
+    padding: 8px 14px;
+
+    font-size: 13px;
+  }
 }

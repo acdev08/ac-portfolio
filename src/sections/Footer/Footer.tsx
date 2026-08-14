@@ -8,7 +8,7 @@ function Footer() {
     <footer className="footer">
       <div className="container">
         <div className="footer-main">
-          <nav className="footer-nav">
+          <nav className="footer-nav" aria-label="Footer navigation">
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#experience">Experience</a>
@@ -17,11 +17,11 @@ function Footer() {
             <a href="#contact">Contact</a>
           </nav>
 
-          <nav className="footer-social">
+          <nav className="footer-social" aria-label="Social links">
             <a
               href="https://github.com/acdev08"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               aria-label="GitHub"
             >
               <FaGithub />
@@ -30,7 +30,7 @@ function Footer() {
             <a
               href="https://www.linkedin.com/in/androcruz08/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               aria-label="LinkedIn"
             >
               <FaLinkedin />

@@ -7,13 +7,12 @@ function About() {
   return (
     <section className="about" id="about">
       <div className="container about-container">
-        {/* LEFT */}
         <div className="about-left">
           <div className="about-image">
-            <div className="about-shape"></div>
+            <div className="about-shape" />
 
             <div className="about-frame">
-              <img src={aboutImage} alt="Andro Cruz" className="about-image" />
+              <img src={aboutImage} alt="Andro Cruz" className="about-photo" />
             </div>
           </div>
 
@@ -36,28 +35,29 @@ function About() {
               <FaLinkedinIn />
             </a>
 
-            <a href="#" aria-label="Facebook">
+            <a
+              href="https://www.facebook.com/andro.cruz.7"
+              aria-label="Facebook"
+            >
               <FaFacebookF />
             </a>
           </div>
         </div>
 
-        {/* RIGHT */}
-
         <div className="about-content">
-          <span className="section-tag">About Me</span>
+          <span className="about-tag">About Me</span>
 
-          <h2 className="section-title">
+          <h2 className="about-title">
             Building Digital Solutions for Over 10 Years
           </h2>
 
           <p className="about-description">
-            I'm an IT graduate and Web Developer with over 10 years of
-            experience building business websites, e-commerce platforms, and
-            modern web applications. My expertise includes WordPress
-            development, front-end development, website maintenance, performance
-            optimization, technical SEO, hosting management, and website
-            security.
+            I'm an IT graduate and Web Developer & Creative Designer with over
+            10 years of experience building business websites, e-commerce
+            platforms, and modern web applications. My expertise includes
+            WordPress development, front-end development, website maintenance,
+            performance optimization, technical SEO, hosting management, and
+            website security.
           </p>
 
           <p className="about-description">

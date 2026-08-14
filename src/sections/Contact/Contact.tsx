@@ -8,30 +8,18 @@ function Contact() {
   return (
     <section className="contact" id="contact">
       <div className="container">
-        {/* ========================================
-            CONTACT HEADER
-        ======================================== */}
-
         <div className="contact-header">
-          <span className="section-tag">Contact</span>
+          <span className="contact-tag">Contact</span>
 
-          <h2 className="section-title">Let's Work Together</h2>
+          <h2 className="contact-title">Let's Work Together</h2>
 
           <p className="contact-description">
-            Have a project in mind, an opportunity to discuss, or simply want to
-            connect? I'd love to hear from you.
+            Have a project in mind, an opportunity to discuss, or simply want
+            to connect? I'd love to hear from you.
           </p>
         </div>
 
-        {/* ========================================
-            CONTACT GRID
-        ======================================== */}
-
         <div className="contact-grid">
-          {/* ========================================
-              CONTACT CTA
-          ======================================== */}
-
           <div className="contact-card contact-cta">
             <span className="contact-card-label">Get In Touch</span>
 
@@ -44,24 +32,25 @@ function Contact() {
             </p>
 
             <div className="contact-buttons">
-              <a href="mailto:revelz08@gmail.com" className="btn-primary">
+              <a
+                href="mailto:revelz08@gmail.com"
+                className="contact-primary-btn"
+              >
                 <Mail size={18} />
                 Send Email
               </a>
 
-              <a href="#" className="btn-secondary">
+              <a href="#" className="contact-secondary-btn">
                 <Download size={18} />
                 Download Resume
               </a>
             </div>
           </div>
 
-          {/* ========================================
-              CONTACT INFORMATION
-          ======================================== */}
-
           <div className="contact-card">
-            <span className="contact-card-label">Contact Information</span>
+            <span className="contact-card-label">
+              Contact Information
+            </span>
 
             <div className="contact-info">
               <div className="contact-item">
@@ -70,7 +59,9 @@ function Contact() {
                 <div>
                   <span className="contact-item-label">Email</span>
 
-                  <a href="mailto:revelz08@gmail.com">revelz08@gmail.com</a>
+                  <a href="mailto:revelz08@gmail.com">
+                    revelz08@gmail.com
+                  </a>
                 </div>
               </div>
 
@@ -122,5 +113,5 @@ function Contact() {
     </section>
   );
 }
-
+  
 export default Contact;
