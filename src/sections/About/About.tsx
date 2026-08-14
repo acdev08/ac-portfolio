@@ -1,18 +1,29 @@
 import "./About.css";
 import aboutImage from "../../assets/images/about-image.png";
+import useInView from "../../hooks/useInView";
 
 import { FaGithub, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
 
 function About() {
+  const { ref, isInView } = useInView<HTMLElement>();
+
   return (
-    <section className="about" id="about">
+    <section
+      className={`about ${isInView ? "is-visible" : ""}`}
+      id="about"
+      ref={ref}
+    >
       <div className="container about-container">
         <div className="about-left">
           <div className="about-image">
             <div className="about-shape" />
 
             <div className="about-frame">
-              <img src={aboutImage} alt="Andro Cruz" className="about-photo" />
+              <img
+                src={aboutImage}
+                alt="Andro Cruz"
+                className="about-photo"
+              />
             </div>
           </div>
 
@@ -37,6 +48,8 @@ function About() {
 
             <a
               href="https://www.facebook.com/andro.cruz.7"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Facebook"
             >
               <FaFacebookF />

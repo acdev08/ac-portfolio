@@ -13,7 +13,6 @@
   z-index: 1000;
 }
 
-
 /* ========================================
    NAVBAR CONTAINER
 ======================================== */
@@ -39,7 +38,6 @@
   box-shadow: var(--shadow-md);
 }
 
-
 /* ========================================
    LOGO
 ======================================== */
@@ -56,10 +54,8 @@
   display: block;
 
   width: auto;
-
   height: 35px;
 }
-
 
 /* ========================================
    DESKTOP NAVIGATION
@@ -94,14 +90,13 @@
   text-decoration: none;
 
   transition:
-    color 0.25s ease,
-    opacity 0.25s ease;
+    color var(--duration-default) var(--ease-standard),
+    opacity var(--duration-default) var(--ease-standard);
 }
 
 .nav-links a:hover {
   color: var(--color-text);
 }
-
 
 /* ========================================
    DESKTOP CTA
@@ -136,23 +131,22 @@
   text-decoration: none;
 
   transition:
-    background-color 0.25s ease,
-    border-color 0.25s ease,
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
+    background-color var(--duration-default) var(--ease-standard),
+    border-color var(--duration-default) var(--ease-standard),
+    transform var(--duration-default) var(--ease-standard),
+    box-shadow var(--duration-default) var(--ease-standard);
 }
 
 .resume-btn:hover {
-  background: #9368ff;
+  background: var(--color-primary-hover);
 
-  border-color: #9368ff;
+  border-color: var(--color-primary-hover);
 
   transform: translateY(-2px);
 
   box-shadow:
     0 10px 24px rgba(124, 77, 255, 0.25);
 }
-
 
 /* ========================================
    MOBILE MENU TOGGLE
@@ -182,10 +176,10 @@
   cursor: pointer;
 
   transition:
-    color 0.25s ease,
-    background-color 0.25s ease,
-    border-color 0.25s ease,
-    transform 0.25s ease;
+    color var(--duration-default) var(--ease-standard),
+    background-color var(--duration-default) var(--ease-standard),
+    border-color var(--duration-default) var(--ease-standard),
+    transform var(--duration-fast) var(--ease-standard);
 }
 
 .menu-toggle:hover {
@@ -200,7 +194,6 @@
   transform: scale(0.96);
 }
 
-
 /* ========================================
    MOBILE CTA
 ======================================== */
@@ -209,39 +202,28 @@
   display: none;
 }
 
-
 /* ========================================
    TABLET / MOBILE
 ======================================== */
 
 @media (max-width: 900px) {
-
   .navbar .container {
     position: relative;
   }
 
-
-  /* ----------------------------
-     MENU TOGGLE
-  ---------------------------- */
+  /* Menu Toggle */
 
   .menu-toggle {
     display: inline-flex !important;
   }
 
-
-  /* ----------------------------
-     DESKTOP CTA
-  ---------------------------- */
+  /* Desktop CTA */
 
   .resume-btn {
     display: none;
   }
 
-
-  /* ----------------------------
-     NAVIGATION PANEL
-  ---------------------------- */
+  /* Navigation Panel */
 
   .nav-links {
     position: absolute;
@@ -279,18 +261,17 @@
 
     pointer-events: none;
 
-    transform: translateY(-8px);
+    transform: translateY(-10px) scale(0.98);
+
+    transform-origin: top center;
 
     transition:
-      opacity 0.25s ease,
-      transform 0.25s ease,
-      visibility 0.25s ease;
+      opacity var(--duration-default) var(--ease-standard),
+      transform var(--duration-slow) var(--ease-emphasized),
+      visibility var(--duration-default) var(--ease-standard);
   }
 
-
-  /* ----------------------------
-     OPEN STATE
-  ---------------------------- */
+  /* Open State */
 
   .nav-links.open {
     opacity: 1;
@@ -299,13 +280,10 @@
 
     pointer-events: auto;
 
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
 
-
-  /* ----------------------------
-     NAV ITEMS
-  ---------------------------- */
+  /* Navigation Items */
 
   .nav-links li {
     width: 100%;
@@ -333,9 +311,9 @@
     text-decoration: none;
 
     transition:
-      color 0.25s ease,
-      background-color 0.25s ease,
-      transform 0.25s ease;
+      color var(--duration-default) var(--ease-standard),
+      background-color var(--duration-default) var(--ease-standard),
+      transform var(--duration-fast) var(--ease-standard);
   }
 
   .nav-links a:hover {
@@ -346,10 +324,7 @@
     transform: translateX(2px);
   }
 
-
-  /* ----------------------------
-     MOBILE CTA
-  ---------------------------- */
+  /* Mobile CTA */
 
   .mobile-cta {
     display: block;
@@ -378,13 +353,11 @@
   }
 }
 
-
 /* ========================================
    SMALL MOBILE
 ======================================== */
 
 @media (max-width: 480px) {
-
   .navbar {
     top: 12px;
   }
@@ -423,13 +396,11 @@
   }
 }
 
-
 /* ========================================
    REDUCED MOTION
 ======================================== */
 
 @media (prefers-reduced-motion: reduce) {
-
   .navbar *,
   .navbar *::before,
   .navbar *::after {

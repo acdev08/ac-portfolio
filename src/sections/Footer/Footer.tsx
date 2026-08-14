@@ -1,11 +1,14 @@
 import "./Footer.css";
+import useInView from "../../hooks/useInView";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Mail } from "lucide-react";
 
 function Footer() {
+  const { ref, isInView } = useInView<HTMLElement>();
+
   return (
-    <footer className="footer">
+    <footer className={`footer ${isInView ? "is-visible" : ""}`} ref={ref}>
       <div className="container">
         <div className="footer-main">
           <nav className="footer-nav" aria-label="Footer navigation">

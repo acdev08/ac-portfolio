@@ -23,6 +23,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  opacity: 0;
+  transform: translateX(-32px);
+
+  transition:
+    opacity var(--duration-slow) var(--ease-emphasized),
+    transform var(--duration-slow) var(--ease-emphasized);
+}
+
+.about.is-visible .about-left {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /* ========================================
@@ -58,7 +70,7 @@
     0 0 40px rgba(114, 48, 255, 0.2),
     0 0 80px rgba(114, 48, 255, 0.12);
 
-  transition: 0.35s ease;
+  transition: var(--transition-motion-default);
 
   z-index: 1;
 }
@@ -95,7 +107,7 @@
 
   backdrop-filter: blur(12px);
 
-  transition: 0.4s ease;
+  transition: var(--transition-motion-slow);
 
   box-shadow:
     0 0 0 1px rgba(114, 48, 255, 0.25),
@@ -155,6 +167,7 @@
 
 .about-socials {
   display: flex;
+
   gap: 18px;
 
   margin-top: 35px;
@@ -162,6 +175,7 @@
 
 .about-socials a {
   display: flex;
+
   align-items: center;
   justify-content: center;
 
@@ -175,7 +189,7 @@
 
   color: #fff;
 
-  transition: 0.3s ease;
+  transition: var(--transition-motion-default);
 }
 
 .about-socials a:hover {
@@ -195,6 +209,20 @@
 .about-content {
   max-width: 700px;
   min-width: 0;
+
+  opacity: 0;
+  transform: translateY(32px);
+
+  transition:
+    opacity var(--duration-slow) var(--ease-emphasized),
+    transform var(--duration-slow) var(--ease-emphasized);
+
+  transition-delay: 120ms;
+}
+
+.about.is-visible .about-content {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .about-tag {
@@ -257,7 +285,7 @@
 
   text-align: center;
 
-  transition: 0.35s ease;
+  transition: var(--transition-motion-default);
 }
 
 .info-card:hover {
@@ -418,5 +446,25 @@
 
   .info-card h3 {
     font-size: 30px;
+  }
+}
+
+/* ========================================
+   REDUCED MOTION
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .about-left,
+  .about-content {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .about-shape,
+  .about-frame,
+  .about-socials a,
+  .info-card {
+    transition: none;
   }
 }

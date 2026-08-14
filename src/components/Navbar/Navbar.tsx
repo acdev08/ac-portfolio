@@ -27,7 +27,9 @@ function Navbar() {
           type="button"
           className="menu-toggle"
           onClick={toggleMenu}
-          aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-label={
+            isMenuOpen ? "Close navigation menu" : "Open navigation menu"
+          }
           aria-expanded={isMenuOpen}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}

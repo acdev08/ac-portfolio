@@ -1,12 +1,18 @@
 import "./Contact.css";
+import useInView from "../../hooks/useInView";
 
 import { Mail, MapPin, Download } from "lucide-react";
-
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Contact() {
+  const { ref, isInView } = useInView<HTMLElement>();
+
   return (
-    <section className="contact" id="contact">
+    <section
+      className={`contact ${isInView ? "is-visible" : ""}`}
+      id="contact"
+      ref={ref}
+    >
       <div className="container">
         <div className="contact-header">
           <span className="contact-tag">Contact</span>
@@ -14,8 +20,8 @@ function Contact() {
           <h2 className="contact-title">Let's Work Together</h2>
 
           <p className="contact-description">
-            Have a project in mind, an opportunity to discuss, or simply want
-            to connect? I'd love to hear from you.
+            Have a project in mind, an opportunity to discuss, or simply want to
+            connect? I'd love to hear from you.
           </p>
         </div>
 
@@ -48,9 +54,7 @@ function Contact() {
           </div>
 
           <div className="contact-card">
-            <span className="contact-card-label">
-              Contact Information
-            </span>
+            <span className="contact-card-label">Contact Information</span>
 
             <div className="contact-info">
               <div className="contact-item">
@@ -59,9 +63,7 @@ function Contact() {
                 <div>
                   <span className="contact-item-label">Email</span>
 
-                  <a href="mailto:revelz08@gmail.com">
-                    revelz08@gmail.com
-                  </a>
+                  <a href="mailto:revelz08@gmail.com">revelz08@gmail.com</a>
                 </div>
               </div>
 
@@ -113,5 +115,5 @@ function Contact() {
     </section>
   );
 }
-  
+
 export default Contact;

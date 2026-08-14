@@ -1,8 +1,15 @@
 import "./Skills.css";
+import useInView from "../../hooks/useInView";
 
 function Skills() {
+  const { ref, isInView } = useInView<HTMLElement>();
+
   return (
-    <section className="skills" id="skills">
+    <section
+      className={`skills ${isInView ? "is-visible" : ""}`}
+      id="skills"
+      ref={ref}
+    >
       <div className="container">
         <div className="skills-header">
           <span className="skills-tag">Tech Stack</span>
@@ -30,7 +37,7 @@ function Skills() {
           </div>
 
           <div className="skill-card">
-            <h3>Backend & Database</h3>
+            <h3>Backend &amp; Database</h3>
 
             <div className="skill-tags">
               <span>Node.js</span>
@@ -45,7 +52,7 @@ function Skills() {
           </div>
 
           <div className="skill-card">
-            <h3>WordPress & CMS</h3>
+            <h3>WordPress &amp; CMS</h3>
 
             <div className="skill-tags">
               <span>WordPress</span>
@@ -60,7 +67,7 @@ function Skills() {
           </div>
 
           <div className="skill-card">
-            <h3>Tools & Deployment</h3>
+            <h3>Tools &amp; Deployment</h3>
 
             <div className="skill-tags">
               <span>Git</span>

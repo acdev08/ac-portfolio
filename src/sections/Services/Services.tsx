@@ -2,10 +2,17 @@ import "./Services.css";
 
 import { Globe, Wrench, Palette } from "lucide-react";
 import { FaWordpress } from "react-icons/fa";
+import useInView from "../../hooks/useInView";
 
 function Services() {
+  const { ref, isInView } = useInView<HTMLElement>();
+
   return (
-    <section className="services" id="services">
+    <section
+      className={`services ${isInView ? "is-visible" : ""}`}
+      id="services"
+      ref={ref}
+    >
       <div className="container">
         <div className="services-header">
           <span className="services-tag">Services</span>
@@ -52,7 +59,7 @@ function Services() {
               <Wrench size={34} />
             </div>
 
-            <h3>Website Care & Optimization</h3>
+            <h3>Website Care &amp; Optimization</h3>
 
             <p>
               Website maintenance, technical SEO, performance optimization,

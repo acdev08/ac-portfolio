@@ -1,8 +1,15 @@
 import "./Experience.css";
+import useInView from "../../hooks/useInView";
 
 function Experience() {
+  const { ref, isInView } = useInView<HTMLElement>();
+
   return (
-    <section className="experience" id="experience">
+    <section
+      className={`experience ${isInView ? "is-visible" : ""}`}
+      id="experience"
+      ref={ref}
+    >
       <div className="container">
         <div className="experience-header">
           <span className="experience-tag">Experience</span>

@@ -4,7 +4,54 @@
 
 .projects {
   padding: var(--space-4xl) 0;
+
   background-color: #11152c;
+}
+
+/* ========================================
+   ENTRANCE ANIMATION
+======================================== */
+
+.projects-header,
+.project-card {
+  opacity: 0;
+
+  transform: translateY(32px);
+
+  transition:
+    opacity var(--duration-slow) var(--ease-emphasized),
+    transform var(--duration-slow) var(--ease-emphasized);
+}
+
+.projects.is-visible .projects-header,
+.projects.is-visible .project-card {
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+.projects.is-visible .project-card:nth-child(1) {
+  transition-delay: 80ms;
+}
+
+.projects.is-visible .project-card:nth-child(2) {
+  transition-delay: 140ms;
+}
+
+.projects.is-visible .project-card:nth-child(3) {
+  transition-delay: 200ms;
+}
+
+.projects.is-visible .project-card:nth-child(4) {
+  transition-delay: 260ms;
+}
+
+.projects.is-visible .project-card:nth-child(5) {
+  transition-delay: 320ms;
+}
+
+.projects.is-visible .project-card:nth-child(6) {
+  transition-delay: 380ms;
 }
 
 /* ========================================
@@ -13,7 +60,9 @@
 
 .projects-header {
   max-width: 720px;
+
   margin: 0 auto var(--space-3xl);
+
   text-align: center;
 }
 
@@ -25,6 +74,7 @@
   color: var(--color-primary);
 
   font-size: var(--text-lg);
+
   font-weight: var(--font-semibold);
 }
 
@@ -32,8 +82,11 @@
   margin: 0 0 28px;
 
   font-family: var(--font-heading);
+
   font-size: var(--text-4xl);
+
   font-weight: var(--font-bold);
+
   line-height: 1.1;
 
   color: var(--color-text);
@@ -41,7 +94,9 @@
 
 .projects-description {
   font-family: var(--font-body);
+
   font-size: var(--text-lg);
+
   line-height: 1.9;
 
   color: var(--color-text-secondary);
@@ -67,6 +122,7 @@
 
 .project-card {
   display: flex;
+
   flex-direction: column;
 
   min-width: 0;
@@ -76,9 +132,14 @@
   background: var(--color-surface);
 
   border: 2px solid var(--color-border);
+
   border-radius: var(--radius-lg);
 
-  transition: var(--transition-default);
+  transition:
+    opacity var(--duration-slow) var(--ease-emphasized),
+    transform var(--duration-slow) var(--ease-emphasized),
+    border-color var(--duration-default) var(--ease-standard),
+    box-shadow var(--duration-default) var(--ease-standard);
 }
 
 .project-card:hover {
@@ -123,9 +184,10 @@
   height: 100%;
 
   object-fit: contain;
+
   object-position: center;
 
-  transition: var(--transition-default);
+  transition: var(--transition-motion-default);
 }
 
 .project-card:hover .project-image img {
@@ -138,6 +200,7 @@
 
 .project-content {
   display: flex;
+
   flex-direction: column;
 
   flex: 1;
@@ -167,7 +230,9 @@
   border: 1px solid rgba(124, 77, 255, 0.18);
 
   font-family: var(--font-body);
+
   font-size: var(--text-sm);
+
   font-weight: var(--font-semibold);
 
   letter-spacing: 0.3px;
@@ -183,7 +248,9 @@
   margin-bottom: var(--space-lg);
 
   font-family: var(--font-body);
+
   font-size: var(--text-sm);
+
   font-weight: var(--font-semibold);
 
   letter-spacing: 0.3px;
@@ -199,7 +266,9 @@
   margin-bottom: var(--space-md);
 
   font-family: var(--font-heading);
+
   font-size: var(--text-2xl);
+
   font-weight: var(--font-bold);
 
   line-height: 1.2;
@@ -215,7 +284,9 @@
   margin-bottom: var(--space-lg);
 
   font-family: var(--font-body);
+
   font-size: var(--text-base);
+
   line-height: 1.8;
 
   color: var(--color-text-secondary);
@@ -227,6 +298,7 @@
 
 .project-links {
   display: flex;
+
   flex-wrap: wrap;
 
   gap: var(--space-md);
@@ -253,7 +325,9 @@
   background: rgba(124, 77, 255, 0.08);
 
   font-family: var(--font-body);
+
   font-size: var(--text-sm);
+
   font-weight: var(--font-medium);
 
   color: var(--color-text);
@@ -262,12 +336,13 @@
 
   cursor: pointer;
 
-  transition: var(--transition-default);
+  transition: var(--transition-motion-default);
 }
 
 .project-links a:hover,
 .project-modal-btn:hover {
   background: var(--color-primary);
+
   border-color: var(--color-primary);
 
   color: #fff;
@@ -322,6 +397,7 @@
 
   .projects-description {
     font-size: var(--text-base);
+
     line-height: 1.8;
   }
 
@@ -363,10 +439,32 @@
 
   .project-category {
     padding: 5px 10px;
+
     font-size: 12px;
   }
 
   .project-stack {
     font-size: 13px;
+  }
+}
+
+/* ========================================
+   REDUCED MOTION
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .projects-header,
+  .project-card {
+    opacity: 1;
+
+    transform: none;
+
+    transition: none;
+  }
+
+  .project-image img,
+  .project-links a,
+  .project-modal-btn {
+    transition: none;
   }
 }

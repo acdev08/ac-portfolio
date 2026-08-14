@@ -1,4 +1,5 @@
 import "./Projects.css";
+import useInView from "../../hooks/useInView";
 
 import portfolio from "../../assets/projects/img-project1.png";
 import bongabon from "../../assets/projects/img-project2.png";
@@ -8,8 +9,14 @@ import creativedesign from "../../assets/projects/img-project5.png";
 import guroly from "../../assets/projects/img-project6.png";
 
 function Projects() {
+  const { ref, isInView } = useInView<HTMLElement>();
+
   return (
-    <section className="projects" id="projects">
+    <section
+      className={`projects ${isInView ? "is-visible" : ""}`}
+      id="projects"
+      ref={ref}
+    >
       <div className="container">
         <div className="projects-header">
           <span className="projects-tag">Projects</span>

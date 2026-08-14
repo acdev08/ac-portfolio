@@ -66,6 +66,23 @@
   --transition-fast: 0.2s ease;
   --transition-default: 0.3s ease;
   --transition-slow: 0.5s ease;
+
+  /* ========================================
+     MOTION TOKENS
+  ======================================== */
+
+  --duration-fast: 200ms;
+  --duration-default: 350ms;
+  --duration-slow: 800ms;
+
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-emphasized: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --transition-motion-fast: all var(--duration-fast) var(--ease-standard);
+
+  --transition-motion-default: all var(--duration-default) var(--ease-standard);
+
+  --transition-motion-slow: all var(--duration-slow) var(--ease-emphasized);
 }
 
 /* ========================================
@@ -143,5 +160,21 @@ ol {
 @media (max-width: 480px) {
   .container {
     width: calc(100% - 28px);
+  }
+}
+
+/* ========================================
+   REDUCED MOTION
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  :root {
+    --duration-fast: 0ms;
+    --duration-default: 0ms;
+    --duration-slow: 0ms;
   }
 }
