@@ -27,6 +27,25 @@ function Experience() {
             <div className="timeline-dot" />
 
             <div className="experience-content">
+              <span className="experience-date">2025 – Present</span>
+
+              <h3>Web Developer & Creative Designer</h3>
+
+              <h4>Freelance</h4>
+
+              <p>
+                Develop and maintain responsive websites and modern web
+                applications for startups, small businesses, and freelance
+                clients, while creating website graphics, branding materials,
+                and other digital assets to deliver cohesive digital solutions.
+              </p>
+            </div>
+          </div>
+
+          <div className="experience-item">
+            <div className="timeline-dot" />
+
+            <div className="experience-content">
               <span className="experience-date">2023 – 2025</span>
 
               <h3>Senior WordPress Developer / Social Media Specialist</h3>
@@ -34,9 +53,10 @@ function Experience() {
               <h4>EHW Tech</h4>
 
               <p>
-                Led the development of high-performance WordPress websites,
-                optimized website performance, managed deployments, maintenance,
-                hosting, and supported digital marketing initiatives.
+                Led WordPress development across 7 company websites and client
+                projects while managing 21 social media channels and digital
+                marketing campaigns that contributed to an 85% year-over-year
+                sales increase.
               </p>
             </div>
           </div>
@@ -52,9 +72,10 @@ function Experience() {
               <h4>WHO Solidarity Trial Vaccine — St. Luke's Medical Center</h4>
 
               <p>
-                Managed clinical trial systems, maintained data integrity,
-                coordinated operational workflows, inventory management, and
-                technical support for healthcare research.
+                Led 10 Data Encoders and Research Assistants supporting 1,000
+                vaccine trial participants while managing CASTOR medical records
+                and technical operations that contributed to a 96% successful
+                study outcome.
               </p>
             </div>
           </div>
@@ -70,8 +91,9 @@ function Experience() {
               <h4>EHW Tech</h4>
 
               <p>
-                Developed and maintained WordPress websites, managed hosting,
-                implemented SEO improvements, and performed website maintenance.
+                Developed and maintained 20+ WordPress websites while managing
+                WHM/cPanel hosting, deployments, backups, troubleshooting, and
+                SEO optimizations to support reliable web operations.
               </p>
             </div>
           </div>
@@ -82,13 +104,14 @@ function Experience() {
             <div className="experience-content">
               <span className="experience-date">2017 – 2019</span>
 
-              <h3>Web Developer</h3>
+              <h3>Web & Automation Developer</h3>
 
               <h4>Digital Edge</h4>
 
               <p>
-                Developed responsive client websites, converted UI/UX designs
-                into production-ready CMS websites, and configured CRM systems.
+                Developed responsive websites across WordPress, Shopify, and
+                Squarespace while building Infusionsoft (now Keap) automation
+                workflows and email campaigns for client marketing operations.
               </p>
             </div>
           </div>
@@ -99,14 +122,14 @@ function Experience() {
             <div className="experience-content">
               <span className="experience-date">2015 – 2017</span>
 
-              <h3>Web Developer</h3>
+              <h3>Web Designer</h3>
 
               <h4>Protos EzyVA Pampanga Inc.</h4>
 
               <p>
-                Built end-to-end websites from planning to deployment, converted
-                design mockups into responsive websites, and handled testing and
-                production deployment.
+                Designed and implemented WordPress websites, UI/UX mockups,
+                landing pages, and marketing funnels while building WooCommerce
+                sites and supporting e-commerce and lead-generation activities.
               </p>
             </div>
           </div>

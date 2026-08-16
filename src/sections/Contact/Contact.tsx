@@ -46,7 +46,12 @@ function Contact() {
                 Send Email
               </a>
 
-              <a href="#" className="contact-secondary-btn">
+              <a
+                href="https://drive.google.com/file/d/1R31n_N0EXzkLxwXS0GD1_1Z-jmk2dnOM/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-secondary-btn"
+              >
                 <Download size={18} />
                 Download Resume
               </a>
